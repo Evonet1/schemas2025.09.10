@@ -1,0 +1,38 @@
+{
+  "IDMversion": "1.3 2025-08-10",
+  "license": "(c) EMerge Alliance 2025, Licensed CC BY-NC-ND 4.0 -All Rights Reserved",
+  "$comment": "This JSON schema is for any multi-port component",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "function": {
+        "type": "string",
+        "minLength": 0,
+        "maxLength": 65535
+      },
+      "ports": {
+        "type": "array",
+        "items": {
+          "$ref": "port-schema.json#/schema"
+        }
+      },
+      "controPort": { "$ref": "controlPort-schema.json#/schema" },
+      "outputsParallelable": { "type": "boolean" },
+      "3for3phase": { "type": "boolean" },
+      "transferEfficiency": {
+        "type": "object",
+        "properties": {
+          "fromPort": { "type": "string" },
+          "toPort": { "type": "string" },
+          "efficiency%": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "exclusiveMaximum": 100
+          }
+        }
+      },
+      "staticPower": {"$ref": "powerRating-schema.json#/schema" },
+      "energyCapacity": { "$ref": "energy-schema.json#/schema" }
+    }
+  }
+}
