@@ -1,13 +1,1 @@
-{
-    "type": "object",
-    "properties": {
-      "minVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "maxVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "nominalVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "maxCurrentOut": { "$ref": "currentRating-schema.json#/schema", "minimum": 0 },
-      "maxCurrentIn": { "$ref": "currentRating-schema.json#/schema", "maximum": 0 },
-      "maxPowerIn": { "$ref": "powerRating-schema.json#/schema" },
-      "maxPowerOut": { "$ref": "powerRating-schema.json#/schema" }
-    }
-  }
 
