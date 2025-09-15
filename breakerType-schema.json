@@ -9,6 +9,7 @@
     "Thermal",
     "Thermal-magnetic",
     "Magnetic",
+    "Magnetic-hydraulic",
     "Thermal-magnetic-hydraulic",
     "Electronic",
     "Hybrid"

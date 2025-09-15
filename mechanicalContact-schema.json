@@ -5,12 +5,11 @@
   "schema": {
     "type": "object",
     "properties": {
-      "TPPD": { "$ref": "TPPD-schema.json#/schema" },
       "maxVoltageAC": { "$ref": "voltageRating-schema.json#/schema" },
       "maxVoltageDC": { "$ref": "voltageRating-schema.json#/schema" },
       "maxSteadyCurrent": { "$ref": "currentRating-schema.json#/schema" },
       "ampsBreakingCapacity": { "$ref": "currentRating-schema.json#/schema" },
-      "maxVoltageToGround": { "$ref": "voltageRating-schema.json#/schema" },
+      "minimumWhettingCurrent": { "$ref": "currentRating-schema.json#/schema" },
       "prechargeProtectionRequired": { "type": "boolean" },
       "configuration": {
         "type": "string",
