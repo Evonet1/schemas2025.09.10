@@ -14,9 +14,12 @@
         "type": "string",
         "format": "hostname"
       },
-      "coLogo": { "type": "string" }
+      "coLogo": {"type": "string"}
     },
-    "required": [ "coName", "webHomePageURL" ]
+    "required": [
+      "coName",
+      "webHomePageURL"
+    ]
   },
   "selectionTool": {
     "display": "<a href \"https:$webHomePageURL$\">$coName$</a>",

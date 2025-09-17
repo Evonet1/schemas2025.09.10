@@ -18,9 +18,7 @@
     "ports": [
       {
         "portName": "grid",
-        "VIrelationship": {
-          "portType": "VIrelationshipUndefined"
-        },
+        "VIrelationship": {"portType": "VIrelationshipUndefined"},
         "frequency": "S60",
         "connectionType": "P1L",
         "SOA": {
@@ -39,9 +37,7 @@
       },
       {
         "portName": "gen",
-        "VIrelationship": {
-          "portType": "VIrelationshipUndefined"
-        },
+        "VIrelationship": {"portType": "VIrelationshipUndefined"},
         "frequency": "N60",
         "connectionType": "P1L",
         "SOA": {
@@ -60,9 +56,7 @@
       },
       {
         "portName": "load",
-        "VIrelationship": {
-          "portType": "VIrelationshipUndefined"
-        },
+        "VIrelationship": {"portType": "VIrelationshipUndefined"},
         "frequency": "P60",
         "connectionType": "P1L",
         "SOA": {
@@ -81,9 +75,7 @@
       },
       {
         "portName": "solarIn1",
-        "VIrelationship": {
-          "portType": "VIrelationshipUndefined"
-        },
+        "VIrelationship": {"portType": "VIrelationshipUndefined"},
         "frequency": "DC",
         "connectionType": "DC",
         "SOA": {
@@ -101,9 +93,7 @@
       },
       {
         "portName": "solarIn2",
-        "VIrelationship": {
-          "portType": "VIrelationshipUndefined"
-        },
+        "VIrelationship": {"portType": "VIrelationshipUndefined"},
         "frequency": "DC",
         "connectionType": "DC",
         "SOA": {
@@ -125,7 +115,11 @@
           "portType": "batteryCharging",
           "minNominalBattVolts": "48V",
           "maxNominalBattVolts": "48V",
-          "BMScommunication": [ "CAN", "RS-485", "Modbus" ]
+          "BMScommunication": [
+            "CAN",
+            "RS-485",
+            "Modbus"
+          ]
         },
         "frequency": "DC",
         "connectionType": "DC",
@@ -147,7 +141,10 @@
           "10/100 Mbps Ethernet",
           "Wi-Fi"
         ],
-        "controlProtocol": [ "CAN", "Modbus RTU" ]
+        "controlProtocol": [
+          "CAN",
+          "Modbus RTU"
+        ]
       }
     ]
   },
@@ -164,7 +161,6 @@
       "unit": "F"
     }
   },
-
   "mechanical": {
     "weight": {
       "value": 78,
@@ -172,6 +168,4 @@
     },
     "mountingType": "wall-mount"
   }
-
 }
-

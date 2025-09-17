@@ -6,8 +6,8 @@
     "items": {
       "type": "object",
       "properties": {
-        "filename": { "type": "string" },
-        "mimeType": { "type": "string" }
+        "filename": {"type": "string"},
+        "mimeType": {"type": "string"}
       }
     }
   }

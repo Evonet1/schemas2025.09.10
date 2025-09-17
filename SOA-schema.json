@@ -5,13 +5,33 @@
   "schema": {
     "type": "object",
     "properties": {
-      "minVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "maxVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "nominalVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "maxCurrentOut": { "$ref": "currentRating-schema.json#/schema" },
-      "maxCurrentIn": { "$ref": "currentRating-schema.json#/schema" },
-      "maxPowerIn": { "$ref": "powerRating-schema.json#/schema" },
-      "maxPowerOut": { "$ref": "powerRating-schema.json#/schema" }
+      "minVoltage": {"$ref": "voltageRating-schema.json#/schema"},
+      "maxVoltage": {"$ref": "voltageRating-schema.json#/schema"},
+      "nominalVoltage": {"$ref": "voltageRating-schema.json#/schema"},
+      "voltage": {
+        "type": "object",
+        "properties": {
+          "min": {"type": "number"},
+          "max": {"type": "number"},
+          "nominal": {"type": "number"},
+          "units": {
+            "type": "string",
+            "enum": [
+              "mV",
+              "V",
+              "kV",
+              "Vrms",
+              "kVrms"
+            ]
+          }
+        },
+        "required": ["units"],
+        "additionalProperties": false
+      },
+      "maxCurrentOut": {"$ref": "currentRating-schema.json#/schema"},
+      "maxCurrentIn": {"$ref": "currentRating-schema.json#/schema"},
+      "maxPowerIn": {"$ref": "powerRating-schema.json#/schema"},
+      "maxPowerOut": {"$ref": "powerRating-schema.json#/schema"}
     }
   }
 }

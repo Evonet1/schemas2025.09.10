@@ -4,12 +4,12 @@
   "description": "This should be the part number for the product.\nIf there are several options with distinct part numbers, list each part number with a text description of the option, for example, [[\"ABC123\",\"Standard\"],[\"ABC123-RM\", \"Rack mount option\"]].",
   "schema": {
     "oneOf": [
-      { "type": "string" },
+      {"type": "string"},
       {
         "type": "array",
         "items": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {"type": "string"},
           "minItems": 2
         }
       }
@@ -19,5 +19,4 @@
     "filter": false,
     "display": true
   }
-
 }

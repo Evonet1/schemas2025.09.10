@@ -7,20 +7,28 @@
       {
         "type": "object",
         "properties": {
-          "value": { "type": "number" },
+          "value": {"type": "number"},
           "units": {
             "type": "string",
-            "enum": [ "ns", "&micro;s", "ms", "s", "mins", "hrs", "days", "wks", "yrs" ]
+            "enum": [
+              "ns",
+              "&micro;s",
+              "ms",
+              "s",
+              "mins",
+              "hrs",
+              "days",
+              "wks",
+              "yrs"
+            ]
           }
         },
-        "required": [ "value" ]
+        "required": ["value"]
       },
       {
         "type": "string",
         "pattern": "^([0-9]+(.[0-9]+)?)(((n|&micro;|m)?s)|min|hrs|days|wks|mon|yrs)$"
       }
-
     ]
   }
-
 }

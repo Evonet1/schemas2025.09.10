@@ -4,12 +4,11 @@
   "schema": {
     "type": "object",
     "properties": {
-
-      "TPPD": { "$ref": "TPPD-schema.json#/schema" },
-      "fuseType": { "$ref": "fuseType-schema.json#/schema" },
-      "breakingCapacity": { "$ref": "currentRating-schema.json#/schema" },
-      "responseTime": { "$ref": "fuseResponse-schema.json#/schema" },
-      "blownIndicator": { "type": "boolean" }
+      "TPPD": {"$ref": "TPPD-schema.json#/schema"},
+      "fuseType": {"$ref": "fuseType-schema.json#/schema"},
+      "breakingCapacity": {"$ref": "currentRating-schema.json#/schema"},
+      "responseTime": {"$ref": "fuseResponse-schema.json#/schema"},
+      "blownIndicator": {"type": "boolean"}
     }
   }
 }

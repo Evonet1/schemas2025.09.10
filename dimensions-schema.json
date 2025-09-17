@@ -7,20 +7,27 @@
       {
         "type": "object",
         "properties": {
-          "value": { "type": "number" },
+          "value": {"type": "number"},
           "units": {
             "type": "string",
-            "enum": [ "in", "ft", "yds", "mi", "mm", "cm", "m", "km" ]
+            "enum": [
+              "in",
+              "ft",
+              "yds",
+              "mi",
+              "mm",
+              "cm",
+              "m",
+              "km"
+            ]
           }
         },
-        "required": [ "value" ]
+        "required": ["value"]
       },
       {
         "type": "string",
         "pattern": "^([0-9]+(.[0-9]+)?)(in|ft|yds|mi|mm|cm|m|km)$"
       }
-
     ]
   }
-
 }

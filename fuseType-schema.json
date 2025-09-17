@@ -12,13 +12,16 @@
             "properties": {
               "size": {
                 "type": "string",
-                "enum": [ "standard", "mini" ]
+                "enum": [
+                  "standard",
+                  "mini"
+                ]
               }
             },
-            "required": [ "size" ]
+            "required": ["size"]
           }
         },
-        "required": [ "automotiveBlade" ]
+        "required": ["automotiveBlade"]
       },
       {
         "type": "object",
@@ -26,13 +29,16 @@
           "cartridge": {
             "type": "object",
             "properties": {
-              "length": { "$ref": "dimensions-schema.json#/schema" },
-              "diameter": { "$ref": "dimensions-schema.json#/schema" }
+              "length": {"$ref": "dimensions-schema.json#/schema"},
+              "diameter": {"$ref": "dimensions-schema.json#/schema"}
             },
-            "required": [ "length", "diameter" ]
+            "required": [
+              "length",
+              "diameter"
+            ]
           }
         },
-        "required": [ "cartridge" ]
+        "required": ["cartridge"]
       },
       {
         "type": "object",
@@ -40,12 +46,12 @@
           "flushSquareBody": {
             "type": "object",
             "properties": {
-              "size": { "type": "string" }
+              "size": {"type": "string"}
             },
-            "required": [ "size" ]
+            "required": ["size"]
           }
         },
-        "required": [ "flushSquareBody" ]
+        "required": ["flushSquareBody"]
       },
       {
         "type": "object",
@@ -53,12 +59,12 @@
           "SQB": {
             "type": "object",
             "properties": {
-              "size": { "type": "string" }
+              "size": {"type": "string"}
             },
-            "required": [ "size" ]
+            "required": ["size"]
           }
         },
-        "required": [ "SQB" ]
+        "required": ["SQB"]
       },
       {
         "type": "string",
@@ -69,6 +75,5 @@
         "const": "L50S"
       }
     ]
-
   }
 }

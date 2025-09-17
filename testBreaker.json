@@ -37,9 +37,7 @@
       }
     },
     "numberOfPoles": 2,
-    "tripCriteria": {
-      "overCurrent": true
-    },
+    "tripCriteria": {"overCurrent": true},
     "detectionMethod": "Magnetic-hydraulic",
     "unsafeIfDCpresent": false,
     "isolationMechanism": "mechanical",
@@ -48,16 +46,16 @@
     "width": "0.755in",
     "reset": "manual"
   },
-  "listingAuthorities": [{"LAName":"UL489 Listed"}],
+  "listingAuthorities": [
+    {"LAName": "UL489 Listed"}
+  ],
   "environmental": {
     "operatingTemperature": {
       "min": -40,
       "max": 85,
       "unit": "C"
     },
-    "operatingHumidity%": {
-      "max": 98
-    }
+    "operatingHumidity%": {"max": 98}
   },
   "mechanical": {
     "dimensions": {
@@ -65,7 +63,6 @@
       "height": "3.094in",
       "width": "0.755in"
     },
-
     "weight": {
       "value": 150,
       "unit": "g"

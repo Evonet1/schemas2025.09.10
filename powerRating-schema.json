@@ -7,13 +7,20 @@
       {
         "type": "object",
         "properties": {
-          "value": { "type": "number" },
+          "value": {"type": "number"},
           "units": {
             "type": "string",
-            "enum": [ "mW", "W", "kW" ]
+            "enum": [
+              "mW",
+              "W",
+              "kW"
+            ]
           }
         },
-        "required": [ "value", "units" ]
+        "required": [
+          "value",
+          "units"
+        ]
       },
       {
         "type": "string",
@@ -21,5 +28,4 @@
       }
     ]
   }
-
 }

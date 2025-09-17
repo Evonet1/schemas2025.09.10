@@ -12,18 +12,16 @@
       },
       "ports": {
         "type": "array",
-        "items": {
-          "$ref": "port-schema.json#/schema"
-        }
+        "items": {"$ref": "port-schema.json#/schema"}
       },
-      "controPort": { "$ref": "controlPort-schema.json#/schema" },
-      "outputsParallelable": { "type": "boolean" },
-      "3for3phase": { "type": "boolean" },
+      "controPort": {"$ref": "controlPort-schema.json#/schema"},
+      "outputsParallelable": {"type": "boolean"},
+      "3for3phase": {"type": "boolean"},
       "transferEfficiency": {
         "type": "object",
         "properties": {
-          "fromPort": { "type": "string" },
-          "toPort": { "type": "string" },
+          "fromPort": {"type": "string"},
+          "toPort": {"type": "string"},
           "efficiency%": {
             "type": "number",
             "exclusiveMinimum": 0,
@@ -31,8 +29,8 @@
           }
         }
       },
-      "staticPower": {"$ref": "powerRating-schema.json#/schema" },
-      "energyCapacity": { "$ref": "energy-schema.json#/schema" }
+      "staticPower": {"$ref": "powerRating-schema.json#/schema"},
+      "energyCapacity": {"$ref": "energy-schema.json#/schema"}
     }
   }
 }

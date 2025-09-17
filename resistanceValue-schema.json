@@ -7,20 +7,33 @@
       {
         "type": "object",
         "properties": {
-          "value": { "type": "number" },
+          "value": {"type": "number"},
           "units": {
             "type": "string",
-            "enum": [ "milliohms", "ohms", "kiloohms. megohms", "m\u03A9", "\u03A9", "k\u03A9", "M\u03A9", "mΩ", "Ω", "kΩ", "MΩ" ]
+            "enum": [
+              "milliohms",
+              "ohms",
+              "kiloohms. megohms",
+              "m\u03A9",
+              "\u03A9",
+              "k\u03A9",
+              "M\u03A9",
+              "mΩ",
+              "Ω",
+              "kΩ",
+              "MΩ"
+            ]
           }
         },
-        "required": [ "value", "units" ]
+        "required": [
+          "value",
+          "units"
+        ]
       },
       {
         "type": "string",
         "pattern": "^([0-9]+(.[0-9]+)?)(m|k|M)?(ohms|Ω|\u03A9)$"
       }
-
     ]
   }
-
 }

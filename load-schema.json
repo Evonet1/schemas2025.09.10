@@ -5,11 +5,9 @@
   "schema": {
     "type": "object",
     "properties": {
-      "powerInput": {
-        "$ref": "port-schema.json#/schema"
-      },
-      "controPort": { "$ref": "controlPort-schema.json#/schema" }
+      "powerInput": {"$ref": "port-schema.json#/schema"},
+      "controPort": {"$ref": "controlPort-schema.json#/schema"}
     },
-    "required": [ "powerInput" ]
+    "required": ["powerInput"]
   }
 }

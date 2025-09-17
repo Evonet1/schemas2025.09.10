@@ -5,38 +5,65 @@
   "schema": {
     "type": "object",
     "properties": {
-      "nominalVoltage": { "$ref": "voltageRating-schema.json#/schema" },
-      "energyCapacity": { "$ref": "energy-schema.json#/schema" },
-      "chemistry": { "type": "string" },
+      "SOA": {"$ref": "SOA-schema.json#/schema"},
+      "energyCapacity": {"$ref": "energy-schema.json#/schema"},
+      "dischargeRate": {
+        "type": "string",
+        "pattern": "^C[0-9]+(.[0-9]+)?$"
+      },
+      "typicalCycleLife": {"type": "number"},
+      "chemistry": {"type": "string"},
       "BMScommunication": {
         "type": "object",
         "properties": {
           "protocol": {
             "anyOf": [
-              { "type": "string" },
+              {"type": "string"},
               {
                 "type": "array",
-                "items": { "type": "string" }
+                "items": {"type": "string"}
               }
             ]
           },
           "interface": {
             "anyOf": [
-              { "type": "string" },
+              {"type": "string"},
               {
                 "type": "array",
-                "items": { "type": "string" }
+                "items": {"type": "string"}
               }
             ]
           }
         }
       }
     },
-    "required": [ "nominalVoltage", "energyCapacity", "chemistry" ]
+    "required": [
+      "energyCapacity",
+      "chemistry"
+    ]
   },
   "selectionTool": {
-    "filter": [ "chemistry", "nominalVoltage", "energyCapacity" ],
-    "display": [ "image", "chemistry", "nominalVoltage", "energyCapacity", "listPrice" ],
-    "compare": [ "chemistry", "nominalVoltage", "energyCapacity", "length", "width", "height", "weight", "listPrice" ]
+    "filter": [
+      "chemistry",
+      "nominalVoltage",
+      "energyCapacity"
+    ],
+    "display": [
+      "image",
+      "chemistry",
+      "nominalVoltage",
+      "energyCapacity",
+      "listPrice"
+    ],
+    "compare": [
+      "chemistry",
+      "nominalVoltage",
+      "energyCapacity",
+      "length",
+      "width",
+      "height",
+      "weight",
+      "listPrice"
+    ]
   }
 }

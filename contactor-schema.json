@@ -5,15 +5,19 @@
   "schema": {
     "type": "object",
     "properties": {
-      "coilNominalVolts": { "$ref": "voltageRating-schema.json#/schema" },
+      "coilNominalVolts": {"$ref": "voltageRating-schema.json#/schema"},
       "coilACDC": {
         "type": "string",
-        "enum": [ "AC", "DC", "AC/DC" ]
+        "enum": [
+          "AC",
+          "DC",
+          "AC/DC"
+        ]
       },
-      "coilResistance": { "$ref": "resistanceValue-schema.json#/schema" },
-      "coilSOA": { "$ref": "SOA-schema.json#/schema" },
-      "contactRating": { "$ref": "mechanicalContact-schema.json#/schema" },
-      "coilContactIsolationVolts": { "$ref": "voltageRating-schema.json#/schema" },
+      "coilResistance": {"$ref": "resistanceValue-schema.json#/schema"},
+      "coilSOA": {"$ref": "SOA-schema.json#/schema"},
+      "contactRating": {"$ref": "mechanicalContact-schema.json#/schema"},
+      "coilContactIsolationVolts": {"$ref": "voltageRating-schema.json#/schema"},
       "numberOfPolesNormallyOpen": {
         "type": "integer",
         "minimum": 0
@@ -30,10 +34,9 @@
         "type": "integer",
         "minimum": 0
       },
-      "mountingStyle": { "$ref": "mountingStyle-schema.json#/schema" },
-      "width": { "$ref": "dimensions-schema.json#/schema" },
-      "connection": { "$ref": "connection-schema.json#/schema" }
+      "mountingStyle": {"$ref": "mountingStyle-schema.json#/schema"},
+      "width": {"$ref": "dimensions-schema.json#/schema"},
+      "connection": {"$ref": "connection-schema.json#/schema"}
     }
   }
 }
-

@@ -5,14 +5,14 @@
   "schema": {
     "type": "object",
     "properties": {
-      "overCurrent": { "type": "boolean" },
-      "overVoltage": { "type": "boolean" },
-      "underVoltage": { "type": "boolean" },
-      "groundFault": { "type": "boolean" },
-      "arcFault": { "type": "boolean" },
-      "manualOperation": { "type": "boolean" },
-      "phaseImbalance": { "type": "boolean" },
-      "externalSolenoid": { "type": "boolean" },
+      "overCurrent": {"type": "boolean"},
+      "overVoltage": {"type": "boolean"},
+      "underVoltage": {"type": "boolean"},
+      "groundFault": {"type": "boolean"},
+      "arcFault": {"type": "boolean"},
+      "manualOperation": {"type": "boolean"},
+      "phaseImbalance": {"type": "boolean"},
+      "externalSolenoid": {"type": "boolean"},
       "acronym": {
         "type": "string",
         "enum": [
@@ -26,12 +26,8 @@
           "MCCB",
           "AFCB",
           "ELCB"
-
         ]
-
       }
-
     }
   }
-
 }

@@ -5,13 +5,13 @@
   "schema": {
     "type": "object",
     "properties": {
-      "frequency": { "$ref": "frequency-schema.json#/schema" },
-      "SOA": { "$ref": "SOA-schema.json#/schema" },
-      "maxVoltageToGround": { "$ref": "voltageRating-schema.json#/schema" },
-      "mechanicalContact": {"$ref":"mechanicalContact-schema.json#/schema"},
-      "insertedResistance": { "$ref": "resistanceValue-schema.json#/schema" },
-      "AEndConnection": { "$ref": "connection-schema.json#/schema" },
-      "BEndConnection": { "$ref": "connection-schema.json#/schema" }
+      "frequency": {"$ref": "frequency-schema.json#/schema"},
+      "SOA": {"$ref": "SOA-schema.json#/schema"},
+      "maxVoltageToGround": {"$ref": "voltageRating-schema.json#/schema"},
+      "mechanicalContact": {"$ref": "mechanicalContact-schema.json#/schema"},
+      "insertedResistance": {"$ref": "resistanceValue-schema.json#/schema"},
+      "AEndConnection": {"$ref": "connection-schema.json#/schema"},
+      "BEndConnection": {"$ref": "connection-schema.json#/schema"}
     }
   }
 }

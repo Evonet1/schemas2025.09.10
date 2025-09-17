@@ -5,11 +5,11 @@
   "schema": {
     "type": "object",
     "properties": {
-      "outputPort": { "$ref": "port-schema.json#/schema" },
-      "mechanical": { "$ref": "mechanical-schema.json#/schema" },
-      "environmental": { "$ref": "environmental-schema.json#/schema" },
-      "connector": { "type": "string" },
-      "controlPort": { "$ref": "controlPort-schema.json#/schema" }
+      "outputPort": {"$ref": "port-schema.json#/schema"},
+      "mechanical": {"$ref": "mechanical-schema.json#/schema"},
+      "environmental": {"$ref": "environmental-schema.json#/schema"},
+      "connector": {"type": "string"},
+      "controlPort": {"$ref": "controlPort-schema.json#/schema"}
     }
   }
 }

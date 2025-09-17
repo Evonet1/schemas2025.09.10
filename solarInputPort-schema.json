@@ -9,9 +9,9 @@
         "type": "string",
         "const": "solarInput"
       },
-      "SOA": { "$ref": "SOA-schema.json#/schema" },
-      "maxOpenCctVolts": { "$ref": "voltageRating-schema.json#/schema" },
-      "maxShortCctCurrent": { "$ref": "currentRating-schema.json#/schema" }
+      "SOA": {"$ref": "SOA-schema.json#/schema"},
+      "maxOpenCctVolts": {"$ref": "voltageRating-schema.json#/schema"},
+      "maxShortCctCurrent": {"$ref": "currentRating-schema.json#/schema"}
     }
   }
 }

@@ -7,48 +7,59 @@
       {
         "type": "object",
         "properties": {
-          "connectionType": { "const": "bolt" },
-          "bolt": { "$ref": "boltSize-schema.json#/schema" }
+          "connectionType": {"const": "bolt"},
+          "bolt": {"$ref": "boltSize-schema.json#/schema"}
         },
-        "required": [ "connectionType","bolt" ]
+        "required": [
+          "connectionType",
+          "bolt"
+        ]
       },
       {
         "type": "object",
         "properties": {
-          "connectionType": { "const": "terminal" },
-          "terminal": { "$ref": "wireSizes-schema.json#/schema" }
+          "connectionType": {"const": "terminal"},
+          "terminal": {"$ref": "wireSizes-schema.json#/schema"}
         },
-        "required": [ "connectionType","terminal" ]
+        "required": [
+          "connectionType",
+          "terminal"
+        ]
       },
-      { "type":"object",
+      {
+        "type": "object",
         "properties": {
-        "connectionType": { "const": "plugAndSocket" },
-        "type": { "type": "string" },
-        "gender": { "type": "string" } }
+          "connectionType": {"const": "plugAndSocket"},
+          "type": {"type": "string"},
+          "gender": {"type": "string"}
+        }
       },
-      { "type": "array",
-        "items": { "type":"object",
-        "properties": {
-            "connectionType": { "const": "plugAndSocket" },
-            "type": { "type": "string" },
-            "gender": { "type": "string" } }
+      {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "connectionType": {"const": "plugAndSocket"},
+            "type": {"type": "string"},
+            "gender": {"type": "string"}
           }
+        }
       },
       {
         "type": "object",
         "properties": {
-          "connectionType": { "const": "other" },
-          "other": { "type": "string" }
+          "connectionType": {"const": "other"},
+          "other": {"type": "string"}
         },
-        "required": [ "other" ]
+        "required": ["other"]
       }
     ]
   },
   "definitions": {
     "plugAndSocket": {
-        "connectionType": { "const": "plugAndSocket" },
-        "type": { "type": "string" },
-        "gender": { "type": "string" }
+      "connectionType": {"const": "plugAndSocket"},
+      "type": {"type": "string"},
+      "gender": {"type": "string"}
     }
   }
 }

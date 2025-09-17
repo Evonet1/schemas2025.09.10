@@ -5,24 +5,56 @@
   "mandatory": true,
   "schema": {
     "type": "string",
-    "enum": [ "offered", "required", "neither" ]
+    "enum": [
+      "offered",
+      "required",
+      "neither"
+    ]
   },
   "dataEntry": {
     "prompt": "Is a PE (Ground) wire offered or required?",
     "entryType": "dropdown",
     "dropdownValues": [
-      [ "Offered", "PE Offered", "The port provides a PE (Ground) connection" ],
-      [ "Required", "Required", "The port requires a PE (Ground) connection" ],
-      [ "Neither", "No ground connection", "This port neither offers nor requires a PE/Ground wire" ]
+      [
+        "Offered",
+        "PE Offered",
+        "The port provides a PE (Ground) connection"
+      ],
+      [
+        "Required",
+        "Required",
+        "The port requires a PE (Ground) connection"
+      ],
+      [
+        "Neither",
+        "No ground connection",
+        "This port neither offers nor requires a PE/Ground wire"
+      ]
     ]
   },
   "summing": {
     "method": "textList",
     "list": [
-      [ "", "", "" ],
-      [ "Offered", "Required", "Offered" ],
-      [ "Offered", "Neither", "Offered" ],
-      [ "Required", "Neither", "Required" ]
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "Offered",
+        "Required",
+        "Offered"
+      ],
+      [
+        "Offered",
+        "Neither",
+        "Offered"
+      ],
+      [
+        "Required",
+        "Neither",
+        "Required"
+      ]
     ]
   }
 }

@@ -7,20 +7,19 @@
       "operatingTemperature": {
         "type": "object",
         "properties": {
-          "min": {
-            "type": "number"
-          },
-          "max": {
-            "type": "number"
-          },
+          "min": {"type": "number"},
+          "max": {"type": "number"},
           "unit": {
             "type": "string",
-            "enum": [ "C", "F" ]
+            "enum": [
+              "C",
+              "F"
+            ]
           }
         },
         "additionalProperties": false
       },
-      "operatingHumidity%": {
+      "operatingHumidity": {
         "type": "object",
         "$comment": "IEC 60068-2-11",
         "properties": {
@@ -60,8 +59,7 @@
           "13"
         ]
       },
-      "maximumOperatingAltitude": { "$ref": "dimensions-schema.json#/schema" },
-
+      "maximumOperatingAltitude": {"$ref": "dimensions-schema.json#/schema"},
       "coolingMethod": {
         "type": "string",
         "enum": [
@@ -71,8 +69,8 @@
           "none"
         ]
       },
-      "RoHScompliant": { "type": "boolean" },
-      "DomesticComponentRequirement": { "type": "boolean" }
+      "RoHScompliant": {"type": "boolean"},
+      "DomesticComponentRequirement": {"type": "boolean"}
     }
   }
 }

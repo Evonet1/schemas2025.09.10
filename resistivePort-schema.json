@@ -9,8 +9,8 @@
         "type": "string",
         "const": "resistive"
       },
-      "resistance": { "$ref": "resistanceValue-schema.json#/schema" },
-      "maxPower": { "$ref": "powerRating-schema.json#/schema" }
+      "resistance": {"$ref": "resistanceValue-schema.json#/schema"},
+      "maxPower": {"$ref": "powerRating-schema.json#/schema"}
     }
   }
 }
